@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokemon - Shakespeare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
     <script src="dist/bundle.js" defer></script>
   </head>
   <body>
-    <main>
-      <h1>Pokemon with Shakespeare description</h1>
-      <form>
-        <input id="input-search" type="text" />
-        <button id="button-search" role="button">Search</button>
-      </form>
-    </main>
+    <h1>Pokemon with the Shakespeare touch</h1>
+    <form class="search">
+      <input class="search__input" id="input-search" type="text" />
+      <button class="search__button" id="button-search" role="button">Search</button>
+    </form>
+    <section id="favourites"></section>
+    <section id="content"></section>
   </body>
 </html>

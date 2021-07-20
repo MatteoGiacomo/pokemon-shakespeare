@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve",
+    "docker:dev": "webpack serve --host 0.0.0.0",
     "build": "webpack",
     "test": "jest",
     "test:watch": "npm run test -- --watch",
@@ -12,7 +13,7 @@
     "lint:fix": "npm run lint -- --fix",
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write .",
-    "checks": "npm run prettier && npm run lint && npm run test"
+    "checks": "npm run prettier && npm run lint && npm run test -- --coverage"
   },
   "keywords": [
     "typescript",
@@ -21,6 +22,9 @@
   "author": "Matteo Fiorio",
   "license": "ISC",
   "devDependencies": {
+    "@testing-library/dom": "^8.1.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/user-event": "^13.2.0",
     "@types/jest": "^26.0.24",
     "@types/jsdom": "^16.2.13",
     "@typescript-eslint/eslint-plugin": "^4.28.2",
