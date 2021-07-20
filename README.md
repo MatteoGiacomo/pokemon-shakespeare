@@ -18,6 +18,22 @@ git clone git@github.com:MatteoGiacomo/pokemon-shakespeare.git
 
 ---
 
+## Docker environment
+
+### Requirements:
+
+```
+docker at least version 17.04
+docker-compose at least version 1.2
+```
+
+```
+#setup image and start dev server
+$ docker-compose up
+```
+
+## Node environment
+
 ### Requirements:
 
 ```
