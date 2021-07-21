@@ -52,7 +52,7 @@ $ npm ci
 $ npm run dev
 ```
 
-the web application will be visible [in your browser](localhost:8080)
+the web application will be visible [in your browser](http://localhost:8080)
 
 NOTE:
 
